@@ -1,0 +1,6 @@
+tags
+*~
+*.swp
+.VimballRecord
+view
+backups

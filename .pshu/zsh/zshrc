@@ -1,0 +1,2 @@
+# Load settings in a modular fashion
+for config_file ($HOME/.pshu/zsh/*.zsh) source $config_file

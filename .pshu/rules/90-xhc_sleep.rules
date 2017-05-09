@@ -1,0 +1,5 @@
+# Disable wake from S3 on XHC1
+#
+# Causes an error. Need to inspect
+#
+#SUBSYSTEM=="pci", KERNEL="0000:00:14.0", ATTR{device}=="0x9c31" RUN+="/bin/sh -c '/bin/echo disabled > /sys/power/wakeup'"
