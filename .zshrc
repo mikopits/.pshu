@@ -1,0 +1,1 @@
+.pshu/zsh/zshrc
