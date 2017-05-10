@@ -10,5 +10,5 @@ BASE16_SHELL=$HOME/.config/base16-shell
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 # Choose a base16 theme
-BASE16_THEME='solarflare'
+BASE16_THEME='oceanicnext'
 source "$BASE16_SHELL/scripts/base16-$BASE16_THEME.sh"
