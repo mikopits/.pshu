@@ -13,9 +13,12 @@ Plugin 'tpope/vim-endwise.git' " Automatically add end in ruby
 " Extra syntax highlighting
 Plugin 'cespare/vim-toml'
 
-" status/tabline for vim and themes
+" Status/tabline for vim and themes
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
 " Completion/convenience
 Plugin 'auto-pairs-gentle' " Less agressive autopairing
+
+" Base16 colorschemes
+Plugin 'chriskempson/base16-vim'

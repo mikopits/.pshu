@@ -1,1 +1,27 @@
+# Set the theme to pure.
 zstyle ':prezto:module:prompt' theme 'pure'
+
+# Set the pacman frontend.
+zstyle ':prezto:module:pacman' frontend 'yaourt'
+
+# Auto start a tmux session when zsh is launched.
+zstyle ':prezto:module:tmux:auto-start' local 'yes'
+zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+
+# Set SSH identities to load into the agent.
+zstyle ':prezto:module:ssh:load' identities 'id_rsa'
+
+# Syntax highlighting.
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+    'main' \
+    'brackets' \
+    'pattern' \
+    'line' \
+    'cursor' \
+    'root'
+zstyle ':prezto:module:syntax-highlighting' styles \
+    'builtin' 'fg=blue' \
+    'command' 'fg=blue' \
+    'function' 'fg=blue'
+zstyle ':zprezto:module:syntax-highlighting' pattern \
+    'rm* -rf' 'fg=white,bold,bg=red'
