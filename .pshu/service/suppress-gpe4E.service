@@ -2,7 +2,7 @@
 Description=Disables GPE 4E, an interrupt that is going crazy on Macs
 
 [Service]
-ExecStart=/usr/bin/bash -c 'echo "disable > /sys/firmware/acpi/interrupts/gpe4'
+ExecStart=/usr/bin/bash -c 'echo "disable > /sys/firmware/acpi/interrupts/gpe4"'
 
 [Install]
 WantedBy=multi-user.target

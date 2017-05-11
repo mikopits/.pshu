@@ -20,7 +20,7 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
     'cursor' \
     'root'
 zstyle ':prezto:module:syntax-highlighting' styles \
-    'builtin' 'fg=blue' \
+    'builtin' 'fg=green' \
     'command' 'fg=blue' \
     'function' 'fg=blue'
 zstyle ':zprezto:module:syntax-highlighting' pattern \
