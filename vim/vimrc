@@ -96,4 +96,4 @@ set smartcase	" ...unless we type a capital
 set t_Co=256    " Allow 256 colours
 
 " =============== Custom Settings ===================
-so ~/.pshu/vim/settings.vim
+so ~/.vim/settings.vim

@@ -1,3 +1,11 @@
-[submodule ".config/base16-shell"]
-	path = .config/base16-shell
-	url = https://github.com/chriskempson/base16-shell
+[submodule "base16-shell"]
+	path = config/base16-shell
+	url = https://github.com/chriskempson/base16-shell.git
+
+[submodule "vundle"]
+    path = vim/bundle/vundle
+    url = https://github.com/VundleVim/Vundle.vim.git
+
+[submodule "zprezto"]
+	path = zsh/zprezto
+	url = https://github.com/sorin-ionescu/zprezto.git

@@ -1,5 +1,5 @@
 # Shortcut to the dotfile root
-pshu=$HOME/.pshu
+pshu=$HOME/.pshu/.pshu
 
 # Edit and reload aliases
 alias ae='vim $pshu/zsh/aliases.zsh'

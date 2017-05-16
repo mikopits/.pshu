@@ -6,7 +6,7 @@ else
 fi
 
 # Configure base16 for shell
-BASE16_SHELL=$HOME/.config/base16-shell
+BASE16_SHELL=$HOME/.pshu/config/base16-shell
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 # Choose a base16 theme
