@@ -8,4 +8,4 @@
 
 [submodule "zprezto"]
 	path = zsh/zprezto
-	url = https://github.com/sorin-ionescu/zprezto.git
+	url = https://github.com/sorin-ionescu/prezto.git
