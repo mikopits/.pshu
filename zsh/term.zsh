@@ -1,7 +1,7 @@
 # Read from the terminal config
 source $HOME/.pshu/config/term.cfg
 
-if [ $term == "tmux-256color" ]; then
+if [[ $term == "tmux-256color" ]]; then
     # Use 256 Colour xterm if term allows
     if [ -e /usr/share/terminfo/t/tmux-256color ]; then
         export TERM='tmux-256color'
