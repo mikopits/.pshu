@@ -13,7 +13,8 @@ zstyle ':prezto:load' pmodule \
     'utility' \
     'completion' \
     'prompt' \
-    'syntax-highlighting'
+    'syntax-highlighting' \
+    'ssh'
 
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':prezto:module:editor' key-bindings 'vi'
@@ -29,7 +30,7 @@ zstyle ':prezto:module:prompt' theme 'pure'
 #zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Set SSH identities to load into the agent.
-#zstyle ':prezto:module:ssh:load' identities 'id_rsa'
+zstyle ':prezto:module:ssh:load' identities 'id_github'
 
 # Syntax highlighting.
 zstyle ':prezto:module:syntax-highlighting' highlighters \
