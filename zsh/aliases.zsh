@@ -36,3 +36,8 @@ alias pbpaste='xsel --clipboard --output'
 
 # Shortcuts
 alias ahagon='cd $HOME/repos/ahagon && RUST_LOG=debug RUST_BACKTRACE=1 cargo run'
+# Vim-like exit
+alias :q='exit'
+
+# Attach a tmux session
+alias ta='tmux attach -t'

@@ -1,8 +1,15 @@
-# Allow 256 colours if term allows
+# Use 256 Colour xterm if term allows
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
     export TERM='xterm-256color'
 else
     export TERM='xterm-color'
+fi
+
+# Prioritize tmux if term allows tmux
+if [ -e /usr/share/terminfo/t/tmux-256color ]; then
+    export TERM='tmux-256color'
+else
+    export TERM='tmux-color'
 fi
 
 # Configure base16 for shell

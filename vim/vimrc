@@ -93,7 +93,19 @@ set ignorecase	" Ignore case when searching...
 set smartcase	" ...unless we type a capital
 
 " =============== Terminal ==========================
-set t_Co=256    " Allow 256 colours
+set t_Co=256 " Allow 256 colours
+" Override line number colors to be grey
+hi LineNr ctermfg=20
+hi CursorLineNr ctermfg=20
+" Override statements and keywords to be red
+hi Statement ctermfg=1
+" Make special and special comments blue and italic
+hi Special cterm=italic ctermfg=4
+hi! link Tag SpecialKey
+hi! link SpecialChar SpecialKey
+hi! link Delimiter SpecialKey
+hi! link SpecialComment Special
+hi! link Debug SpecialKey
 
 " =============== Custom Settings ===================
 so ~/.vim/settings.vim
