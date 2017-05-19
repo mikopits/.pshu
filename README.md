@@ -6,6 +6,7 @@ Minimal and based on Vim and Zsh. For productivity, not laziness.
 Dependencies
 ------------
 
+* awk
 * curl
 * fasd
 * zsh
