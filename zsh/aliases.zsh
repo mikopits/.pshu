@@ -33,3 +33,9 @@ alias ctest='RUST_BACKTRACE=1 cargo test'
 # xsel shortcuts
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
+
+# Vim-like exit
+alias :q='exit'
+
+# Attach a tmux session
+alias ta='tmux attach -t'
