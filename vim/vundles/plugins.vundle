@@ -22,3 +22,9 @@ Plugin 'auto-pairs-gentle' " Less agressive autopairing
 
 " Base16 colorschemes
 Plugin 'chriskempson/base16-vim'
+
+" Asynchronous linting and make framework
+" Plugin 'neomake/neomake'
+
+" Code completion
+Plugin 'Valloric/YouCompleteMe'

@@ -93,7 +93,8 @@ set ignorecase	" Ignore case when searching...
 set smartcase	" ...unless we type a capital
 
 " =============== Terminal ==========================
-set t_Co=256    " Allow 256 colours
+set t_Co=256            " Allow 256 colours
+colorscheme default     " Hack to give vim in tmux the same colorscheme
 
 " =============== Custom Settings ===================
 so ~/.vim/settings.vim

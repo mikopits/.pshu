@@ -7,11 +7,12 @@ Dependencies
 ------------
 
 * fasd
+* zsh
 
 Installation
 ------------
 
-Use your favourite package manager to get fasd.
+Use your favourite package manager to get fasd and zsh.
 
 Clone the repository into your home directory:
 
