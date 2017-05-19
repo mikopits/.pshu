@@ -99,13 +99,8 @@ hi LineNr ctermfg=20
 hi CursorLineNr ctermfg=20
 " Override statements and keywords to be red
 hi Statement ctermfg=1
-" Make special and special comments blue and italic
-hi Special cterm=italic ctermfg=4
-hi! link Tag SpecialKey
-hi! link SpecialChar SpecialKey
-hi! link Delimiter SpecialKey
-hi! link SpecialComment Special
-hi! link Debug SpecialKey
+" Make special comments blue and italic
+hi SpecialComment term=bold cterm=italic ctermfg=4 guifg=SlateBlue
 
 " =============== Custom Settings ===================
 so ~/.vim/settings.vim
