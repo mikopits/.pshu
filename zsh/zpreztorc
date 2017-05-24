@@ -42,7 +42,5 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
     'root'
 zstyle ':prezto:module:syntax-highlighting' styles \
     'builtin' 'fg=green' \
-    'command' 'fg=blue' \
-    'function' 'fg=blue'
-zstyle ':zprezto:module:syntax-highlighting' pattern \
-    'rm*-rf*' 'fg=white,bold,bg=red'
+    'command' 'fg=green' \
+    'function' 'fg=green'

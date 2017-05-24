@@ -1,0 +1,1 @@
+/home/pshu/.pshu/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

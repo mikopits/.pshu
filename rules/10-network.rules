@@ -1,1 +1,0 @@
-#SUBSYSTEM=="net", ATTR{address}=="5c:f9:38:a6:b3:b4", NAME="wlp3s0"

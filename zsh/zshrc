@@ -1,5 +1,31 @@
+source $HOME/.pshu/pshu.cfg
+
+# Start time for benchmarking
+start=`date +%s.%N`
+
+# Symlink configuration files to the home directory
+ln -sfn $HOME/.pshu/tmux/tmux.conf $HOME/.tmux.conf
+ln -sfn $HOME/.pshu/vim $HOME/.vim
+ln -sfn $HOME/.pshu/vim/vimrc $HOME/.vimrc
+ln -sfn $HOME/.pshu/zsh/zshrc $HOME/.zshrc
+
+# Load zsh files that must be loaded first
+for config_file ($HOME/.pshu/zsh/before/*.zsh) source $config_file
+
+# Symlink zsh-autosuggestions before sourcing
+ln -sfn $HOME/.pshu/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh $HOME/.pshu/zsh
+
 # Load settings in a modular fashion
 for config_file ($HOME/.pshu/zsh/*.zsh) source $config_file
 
-# Load zprezto
-source "${ZDOTDIR:-$HOME}/.pshu/zsh/zprezto/init.zsh"
+# Load zsh files that must be loaded after
+for config_file ($HOME/.pshu/zsh/after/*.zsh) source $config_file
+
+# Finish time for benchmarking
+finish=`date +%s.%N`
+
+# Print how many seconds it took with nanosecond precision
+if [[ $print_launch_time -eq 1 ]]; then
+    runtime=$(($finish-$start))
+    echo "Started in $runtime seconds"
+fi

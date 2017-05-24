@@ -14,7 +14,7 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 
 " Load the rest of the Plugins
-runtime plugins.vundle
+runtime plugins.vim
 
 " All Plugins must be added before the following ling
 call vundle#end()           " Required

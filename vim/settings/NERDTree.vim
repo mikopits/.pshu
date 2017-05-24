@@ -1,7 +1,10 @@
-" Aesthetics for nerdtree
+" Aesthetics for NERDtree
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let g:NERDTreeWinSize = 20
+
+" Close NERDTree when you open a file
+"let NERDTreeQuitOnOpen = 1
 
 " Start up NERDTree when no files are specified
 autocmd StdinReadPre * let s:std_in=1

@@ -1,39 +1,31 @@
-.pshu - My Dotfile Repository
-=============================
+.pshu
+=====
 
 Minimal and based on Vim and Zsh. For productivity, not laziness.
 
 Dependencies
 ------------
 
-* awk
-* curl
+* awk (to check tmux version)
+* curl (to download tmux-256color terminfo)
 * fasd
 * zsh
 
 Installation
 ------------
 
-Use your favourite package manager to get fasd and zsh.
+Back up the following files in your home directory if you don't want to lose
+them: `.tmux.conf`, `.vimrc`, `.zshrc`
 
-Clone the repository into your home directory:
+Use your favourite package manager to get fasd and zsh. Then, clone the
+repository into your home directory recursively:
 
 `git clone --recursive https://github.com/mikopits/.pshu ~/.pshu`
 
-Backup the following files in your home directory, if they exist.
-Then create the appropriate symlinks:
-```bash
-ln -s .pshu/tmux/tmux.conf .tmux.conf
-ln -s .pshu/vim .vim
-ln -s .pshu/vim/vimrc .vimrc
-ln -s .pshu/zsh/zpreztorc .zpreztorc
-ln -s .pshu/zsh/zshrc .zshrc
-```
+Edit `$HOME/.pshu/pshu.cfg` with your preferred settings before you proceed.
 
-Create the following symlinks if zprezto isn't loading.
-```bash
-ln -s .pshu/zsh/zprezto/runcoms/zprofile .zprofile
-ln -s .pshu/zsh/zprezto/runcoms/zshrc .zshrc
-```
+Next time you start a zsh the installation will begin.
 
 Use `vimp` to edit your vim plugins, and `vimu` to install them.
+If you remove a plugin using `vimp`, then you can use `vimc` to clean up
+unused plugins.

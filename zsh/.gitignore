@@ -1,1 +1,7 @@
 secrets.zsh
+pure
+async
+prompt_pure_setup
+base16-shell
+zsh-autosuggestions
+zsh-syntax-highlighting

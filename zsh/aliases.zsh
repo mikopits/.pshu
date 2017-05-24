@@ -1,3 +1,5 @@
+# Edit this file to contain any aliases you want.
+
 # Shortcut to the dotfile root
 pshu=$HOME/.pshu
 
@@ -5,17 +7,18 @@ pshu=$HOME/.pshu
 alias ae='vim $pshu/zsh/aliases.zsh'
 alias ar='source $pshu/zsh/aliases.zsh'
 
-# Change directory to configuration files
-alias conf='cd $pshu/conf'
-alias rules='cd $pshu/rules'
-
 # Show color-coded ls by default
 alias ls='ls --color=auto'
+alias la='ls -la'
 
 # Return to last directory
 alias cdb='cd $OLDPWD'
+alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+
+# Override rm -i alias which makes rm prompt for every action
+alias rm='nocorrect rm'
 
 # Extra fasd aliases
 alias v='fasd -f -e vim'    # Quick opening files with vim
@@ -34,10 +37,14 @@ alias ctest='RUST_BACKTRACE=1 cargo test'
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 
-# Shortcuts
-alias ahagon='cd $HOME/repos/ahagon && RUST_LOG=debug RUST_BACKTRACE=1 cargo run'
 # Vim-like exit
 alias :q='exit'
 
 # Attach a tmux session
 alias ta='tmux attach -t'
+
+# Open i3 config in vim
+alias i3conf='vim ~/.config/i3/config'
+
+# Shortcuts
+alias ahagon='cd $HOME/repos/ahagon && RUST_LOG=debug RUST_BACKTRACE=1 cargo run'
