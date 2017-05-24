@@ -18,13 +18,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
 " Completion/convenience
-Plugin 'auto-pairs-gentle' " Less agressive autopairing
+Plugin 'auto-pairs-gentle'    " Less agressive autopairing
+Plugin 'tpope/vim-commentary' " Comment stuff out
 
 " Base16 colorschemes
 Plugin 'chriskempson/base16-vim'
-
-" Asynchronous linting and make framework
-" Plugin 'neomake/neomake'
-
-" Code completion
-Plugin 'Valloric/YouCompleteMe'
