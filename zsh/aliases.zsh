@@ -26,7 +26,7 @@ alias v='fasd -f -e vim'    # Quick opening files with vim
 # Install/Update/Clean Vim plugins
 alias vimu='vim +PluginInstall +qall'
 alias vimc='vim +PluginClean +qall'
-alias vimp='vim $pshu/vim/vundles/plugins.vundle'
+alias vimp='vim $pshu/vim/vundles/plugins.vim'
 
 # Rust Cargo shortcuts
 alias crun='RUST_BACKTRACE=1 cargo run'
