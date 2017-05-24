@@ -4,4 +4,5 @@ async
 prompt_pure_setup
 base16-shell
 zsh-autosuggestions
+zsh-autosuggestions.zsh
 zsh-syntax-highlighting
