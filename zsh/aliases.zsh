@@ -46,5 +46,8 @@ alias ta='tmux attach -t'
 # Open i3 config in vim
 alias i3conf='vim ~/.config/i3/config'
 
+# Take a screenshot and put it in ~/Pictures/shots. Requires scrot.
+alias scr=scrot -e 'mv $f ~/Pictures/shots'
+
 # Shortcuts
 alias ahagon='cd $HOME/repos/ahagon && RUST_LOG=debug RUST_BACKTRACE=1 cargo run'
