@@ -9,7 +9,7 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'fatih/vim-go'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-endwise.git' " Automatically add end in ruby
-Plugin 'OmniSharp/omnisharp-vim' " IDE-like C#
+"Plugin 'OmniSharp/omnisharp-vim' " IDE-like C#
 
 " Extra syntax highlighting
 Plugin 'cespare/vim-toml'
