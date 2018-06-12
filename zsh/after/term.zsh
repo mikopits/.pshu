@@ -1,5 +1,10 @@
 source $HOME/.pshu/pshu.cfg
 
+if [[ ! -d /usr/share/terminfo/t ]]; then
+    # Make the t directory if it does not exist
+    sudo mkdir /usr/share/terminfo/t
+fi
+
 if [[ $term == "tmux-256color" ]]; then
     # Use 256 Colour xterm if term allows
     if [ -e /usr/share/terminfo/t/tmux-256color ]; then
